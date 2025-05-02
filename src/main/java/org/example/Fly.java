@@ -65,4 +65,9 @@ public class Fly extends Enemy {
     public String bust() {
         return "Враг" + getName() + "ускорился";
     }
+
+    public String toString(){
+        return "ID: " + getId() + ", Имя: " + getName() + ", HP: " + getHp() + ", Урон: " + getDamage() +
+                        ", Кислота: " + getSpit() + ", Крылья: " + getWing();
+    }
 }

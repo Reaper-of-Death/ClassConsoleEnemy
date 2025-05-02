@@ -65,4 +65,9 @@ public class Walk extends Enemy {
     public String reboundAction() {
         return "Враг" + getName() + "отскочил на " + rebound + " метров";
     }
+
+    public String toString(){
+        return "ID: " + getId() + ", Имя: " + getName() + ", HP: " + getHp() + ", Урон: " + getDamage() +
+                        ", Защита: " + getProtectionValue() + ", Отскок: " + getRebound();
+    }
 }
